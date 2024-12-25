@@ -1,0 +1,39 @@
+.collapse-btn {
+    position: absolute;
+    top: 10px;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .sider {
+    width: 200px;
+    background-color: #1a4f82;
+    color: white;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+  .sider.collapsed {
+    width: 60px; /* Collapsed width */
+  }
+  .menu {
+    list-style-type: none;
+    padding: 16px;
+  }
+  
+  .menu-item {
+    padding: 10px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    background-color: #e8e6e6;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .menu-item:hover {
+    background-color: #1890ff;
+  }
+  

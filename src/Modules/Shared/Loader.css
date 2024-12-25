@@ -1,0 +1,48 @@
+/* Loader container to center the spinner */
+.loader-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full viewport height */
+    background-color: #a5a5a7; /* Light background color for better contrast */
+    position: absolute;      /* Ensure it covers the full screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* Enhanced spinner style */
+  .spinner {
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #001529; /* Vibrant blue color for the top part */
+    border-radius: 50%; /* Make it circular */
+    width: 80px; /* Larger width of the spinner */
+    height: 80px; /* Larger height of the spinner */
+    animation: spin 1.5s linear infinite, pulse 1.5s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7); /* Soft glow effect */
+  }
+  
+  /* Animation for spinning */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animation for the subtle pulsing effect */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Slightly enlarge */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
